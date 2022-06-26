@@ -1,0 +1,293 @@
+/* Importando Fontes */
+@font-face {
+    font-family: 'Gotham';
+    src: url(../assets/fonts/GothamMedium.ttf);
+}
+
+@font-face {
+    font-family: 'Gotham Light';
+    src: url(../assets/fonts/GothamLight.ttf);
+}
+
+/*Setando configurações Globais*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Gotham';
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+}
+
+button{
+    border-radius: 50px;
+    padding: 16px 32px 18px;
+    border: none;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+button:hover{
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+/*Cabeçalho*/
+header{
+    background-color: #000;
+    padding: 18px 0;
+}
+
+.spotify-logo{
+    display: inline-block;
+}
+
+.spotify-logo svg{
+    height: 42px;
+    fill: #fff;
+}
+
+header nav ul li{
+    color: #fff;
+    margin: 0 20px;
+}
+
+header nav ul li:hover{
+    color: #1ED760;
+}
+
+/*Conteúdo Principal*/
+/*Primeira Section*/
+#seja-premium{
+    background-color: #ffcdd2;
+}
+
+#seja-premium h1, #seja-premium p{
+    color: #d83519;
+}
+
+#seja-premium button{
+    color: #fff;
+    background-color: #d83519;    
+}
+
+#seja-premium button:hover{
+    background-color: #c12f16;
+}
+
+#seja-premium p{
+    font-family: 'Gotham Light';
+    font-weight: bold;
+}
+
+/*Segunda Section*/
+#web-player{
+    background-color: #2941ab;
+    background-image: url(../assets/images/web-player-background.svg);
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    background-position: right center;
+}
+
+#web-player h1, #web-player h2{
+    color: #1ED760;
+}
+
+#web-player h1{
+    font-size: 52px;
+}
+
+#web-player h2{
+    font-family: 'Gotham Light';
+}
+
+#web-player button{
+    color: #2941ab;
+    background-color: #1ED760;
+}
+
+.mt-medium{
+    margin-top: 60px;
+}
+
+/*Footer*/
+footer{
+    background-color: #000;
+    padding: 80px 100px;
+}
+
+/*Parte superior do rodapé*/
+#top-footer{
+    text-align: center;
+}
+
+#footer-links{
+    font-family: 'Gotham Light';
+    text-align: left;
+    font-weight: 100;
+}
+
+.links-column{
+    margin: 0 42px;
+}
+
+.links-column h3{
+    color: #919496;
+    margin-bottom: 32px;
+    text-transform: uppercase;
+}
+
+.links-column li{
+    color: #fff;
+    margin-bottom: 24px;
+}
+
+.links-column li:hover{
+    color: #1ED760;
+}
+
+#footer-social ul li{
+    display: inline-block;
+}
+
+.social-icon{
+    background-color: #222326;
+    border-radius: 50%;
+    padding: 12px;
+    margin: auto 6px;
+}
+
+.social-icon svg{
+    cursor: pointer;
+    height: 28px;
+    width: 28px;
+    fill: #fff;
+}
+
+.social-icon svg:hover{
+    fill: #1ED760;
+}
+
+/*Footer Inferior*/
+#bottom-footer{
+    font-family: 'Gotham Light';
+    margin-top: 80px;
+}
+
+#legal-links a{
+    margin: 0 10px;
+
+    font-weight: 600;
+    color: #919496;
+}
+
+#legal-links a:hover, #copyright a:hover{
+    color:#1ED760
+}
+
+#copyright a{
+    font-weight: 100;
+    display: block;
+    text-align: right;
+    margin-bottom: 16px;
+    color: #919496;
+}
+
+/*Melhorias no cabeçalho*/
+header nav span{
+    color: #fff;
+}
+
+header nav img{
+    border-radius: 50%;
+    height: 42px;
+    vertical-align: middle;
+    margin: auto 10px;
+}
+
+header nav svg{
+    fill: #fff;
+    height: 12px;
+}
+
+header nav ul li:hover svg{
+    fill: #1ED760;
+}
+
+#dropdown-button{
+    cursor: pointer;
+}
+
+#profile-dropdown{
+    position: absolute;
+    right: 0;
+    top: 50px;
+    background-color: #fff;
+    min-width: 160px;
+    border-radius: 2px;
+    box-shadow: 0 8px 16px 0 rgba(#000, #000, #000, 0.2);
+    display: none;
+}
+
+#profile-dropdown li{
+    display: block;
+    color:#919496;
+    padding: 12px 0;
+    margin-left: 16px;
+}
+
+#profile-dropdown a:first-of-type li{
+    color: #000;
+}
+
+#profile-dropdown a li:hover{
+    color: #1ED760;
+}
+
+.show{
+    display: block !important;
+}
+
+.rainbow-animation{
+    animation: rainbow-logo 3s infinite;
+}
+
+@keyframes rainbow-logo{
+    0%{
+        fill: red;
+
+    }
+    12.5%{
+        fill: orange;
+    }
+
+    25%{
+        fill: yellow;
+    }
+
+    37.5%{
+        fill: green;
+    }
+
+    50%{
+        fill: #009dff;
+    }
+
+    62.5%{
+        fill: blue
+    }
+
+    80%{
+        fill: blueviolet;
+    }
+
+    100%{
+        fill: red;
+    }
+}
